@@ -1,5 +1,7 @@
 export interface Product {
   id: number;
+  product_type: string;
+  product_type_category: string;
   set_number: number;
   set_end_number: number;
   set: string;
@@ -16,10 +18,12 @@ export interface Product {
   ebay_sold_hi: number;
   ebay_sold_low: number;
 }
-
+// Should be card products longer term.?
 export const products = [
   {
     id: 1,
+    product_type: 'Collectible',
+    product_type_category: 'Trading Card',
     set_number: 1,
     set_end_number: 102,
     set: 'Base Set',
@@ -38,6 +42,8 @@ export const products = [
   },
   {
     id: 2,
+    product_type: 'Collectible',
+    product_type_category: 'Trading Card',
     set_number: 4,
     set_end_number: 102,
     set: 'Base Set',
